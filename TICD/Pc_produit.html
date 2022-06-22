@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>xxx.com</title>
+        <link rel="stylesheet" type="text/css" href="Pc_produit.css">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <nav id="menu">
+            <h3><i class="fa fa-wheelchair-alt" aria-hidden="true"></i>xxx</h3>
+            <ul>
+                <li><i class="fa fa-user-circle-o" aria-hidden="true"></i>Se Connecter</li>
+                <li><i class="fa fa-shopping-cart" aria-hidden="true"></i>Panier</li>
+                <li><button id="btnannonce">+ Ajouter une Annonce</button></li>
+
+            </ul>
+        </nav>
+        <div id="sidebar">
+            <ul>
+                <li>PC</li>
+                <li>Souris</li>
+                <li>Clavier</li>
+                <li>Jeux vidéo</li>
+                <li>Casque</li>
+            </ul>
+        </div>
+        
+
+        <div class="shopping-cart">
+            <!-- Title -->
+            <div class="title">
+              Shopping Bag
+            </div>
+           
+            <!-- Product #1 -->
+            <div class="item">
+              <div class="buttons">
+                <span class="delete-btn"></span>
+                <span class="like-btn"></span>
+              </div>
+           
+              <div class="image">
+                <img src="item-1.png" alt="" />
+              </div>
+           
+              <div class="description">
+                <span> product one </span>
+
+                <span>daber rasek fy description</span>
+              </div>
+           
+              <div class="quantity">
+                <button class="plus-btn" type="button" name="button"  onclick="incrementValue() " >
+                  +
+                </button>
+               
+                <input type="text" id="number" value=" ">
+                <button class="minus-btn" type="button" name="button" onclick="decrementValue()">
+                -
+                </button>
+              </div>
+           
+              <div class="total-price">$549</div>
+            </div>
+           
+            <!-- Product #2 -->
+            <div class="item">
+              <div class="buttons">
+                <span class="delete-btn"></span>
+                <span class="like-btn"></span>
+              </div>
+           
+              <div class="image">
+                <img src="item-2.png" alt=""/>
+              </div>
+           
+              <div class="description">
+                <span>product two </span>
+                <span>kyf ly 9ablou</span>
+              </div>
+           
+              <div class="quantity">
+                <button class="plus-btn" type="button" name="button" onclick="incrementValue2()" >
+                  +
+                </button>
+                <input type="text" id="number2" value=" ">
+                <button class="minus-btn" type="button" name="button" onclick="decrementValue2()">
+-             
+   </button>
+              </div>
+           
+              <div class="total-price">$870</div>
+            </div>
+           
+            <!-- Product #3 -->
+            <div class="item">
+              <div class="buttons">
+                <span class="delete-btn"></span>
+                <span class="like-btn"></span>
+              </div>
+           
+              <div class="image">
+                <img src="item-3.png" alt="" />
+              </div>
+           
+              <div class="description">
+                <span>Our Legacy</span>
+                <span>Brushed Scarf</span>
+                <span>Brown</span>
+              </div>
+           
+              <div class="quantity">
+                <button class="plus-btn" type="button" name="button" onclick="incrementValue3()" >
+                  +
+                </button>
+                <input type="text" id="number3" value=" ">
+                <button class="minus-btn" type="button" name="button" onclick="decrementValue3()">
+                  -
+                </button>
+              </div>
+           
+              <div class="total-price">$349</div>
+            </div>
+          </div>
+          <script>
+
+function incrementValue()
+{
+    var value = parseInt(document.getElementById('number').value,10);
+  value = isNaN(value) ? 0 : value;
+    value++;
+    document.getElementById('number').value = value;
+    alert("Produit ajouté avec succès")
+  
+ 
+}
+function incrementValue2()
+{
+    var value = parseInt(document.getElementById('number2').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value++;
+    document.getElementById('number2').value = value;
+    alert("Produit ajouté avec succès")
+}
+function incrementValue3()
+{
+    var value = parseInt(document.getElementById('number3').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value++;
+    document.getElementById('number3').value = value;
+    alert("Produit ajouté avec succès")
+  }
+function decrementValue3()
+{
+    var value = parseInt(document.getElementById('number3').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value--;
+    document.getElementById('number3').value = value;
+    alert("  La quantité d'articles a été mise à jour ")
+}
+function decrementValue2()
+{
+    var value = parseInt(document.getElementById('number2').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value--;
+    document.getElementById('number2').value = value;
+    alert("  La quantité d'articles a été mise à jour ")
+}
+function decrementValue()
+{
+    var value = parseInt(document.getElementById('number').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value--;
+    document.getElementById('number').value = value;
+    alert("  La quantité d'articles a été mise à jour ")
+   
+   
+}
+
+
+          </script>
+               
+    </body>
+    </html>
